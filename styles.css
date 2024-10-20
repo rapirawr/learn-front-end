@@ -1,0 +1,114 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1eb5d3, #0d54b1);
+    color: #000;
+}
+
+.awal {
+    border: 16px solid #fff;
+    border-radius: 16px;
+    background-color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+.example-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.example {
+    width: 50%;
+    margin-right: 10px;
+    border-radius: 16px;
+    border: 2px solid #fff;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.example pre {
+    text-align: left;
+    margin: 0;
+    padding: 10px;
+    white-space: pre-wrap;
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: auto;
+    display: block;
+}
+
+.result {
+    width: 50%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 16px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007bff;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#kesimpulan {
+    border-radius: 16px;
+    text-align: center;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-button {
+    background: #007bff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#1479e5, #fff);
+    border-radius: 10px;
+}
+
+.supp {
+    border-radius: 16px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#s {
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: all 1s; 
+}
+
+#s:hover {
+    color: #a1c4e9;
+    font-size: 15px;
+}

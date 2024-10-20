@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Belajar dasar-dasar HTML dengan contoh interaktif dan penjelasan yang mudah dipahami.">
+    <meta name="keywords" content="HTML, belajar HTML, dasar HTML, tutorial HTML, pemrograman web">
+    <meta name="author" content="rawr">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Dasar-Dasar HTML Interaktif</title>
+</label>
+</head>
+<body>
+    <header>
+        <h1>HTML Learning <i class="fa-brands fa-html5" style="color: rgb(255, 115, 0);"></i></h1>
+    </header>
+    <main>
+        <section id="pengertian">
+            <div class="awal">
+                <h2> Pengertian HTML</h2>
+                <strong>Apa itu HTML?</strong>
+                <p>HTML adalah singkatan dari Hypertext Markup Language, HTML adalah bahasa markup yang umumnya digunakan untuk menyusun bagian paragraf, heading, maupun link pada halaman web. Namun, meskipun susunannya seperti coding, perlu diketahui bahwa HTML bukanlah bahasa pemrograman.</p>
+                <strong>Sejarah HTML</strong>
+                <p>Pada tahun 1980 seorang ahli fisika, Tim Berners-Lee, dan juga seorang kontraktor di CERN (Organisasi Eropa untuk Riset Nuklir) mengusulkan dan menyusun ENQUIRE, sebuah sistem untuk ilmuwan CERN dalam membagi dokumen. Sembilan tahun kemudian, Berners-Lee mengusulkan adanya sistem markah berbasis internet.[2] Berners-Lee menspesifikasikan HTML dan menulis jaringan beserta perangkat lunaknya di akhir 1990. Pada tahun yang sama, Berners-Lee dan Robert Cailliau, insinyur sistem data CERN berkolaborasi dalam sebuah permintaan untuk pendanaan, namun tidak diterima secara resmi oleh CERN. Di catatan pribadinya[3] sejak 1990 dia mendaftar[4] "beberapa dari banyak daerah yang menggunakan hypertext" dan pertama-tama menempatkan sebuah ensiklopedia.</p>
+            </div>
+        </section>
+        <section id="struktur">
+            <h2>Struktur Dasar HTML</h2>
+            <div class="example-container">
+                <div class="example">
+                    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Judul Halaman&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Selamat Datang&lt;/h1&gt;
+    &lt;p&gt;Ini adalah halaman web pertama saya!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </pre>
+                </div>
+                <div class="result">
+                    <h1>Selamat Datang</h1>
+                    <p>Ini adalah halaman web pertama saya!</p>
+                </div>
+            </div>
+        </section>
+        <section id="elemen">
+            <h2>Elemen HTML</h2>
+            <div class="example-container">
+                <div class="example">
+                    <h3>Contoh Elemen Judul</h3>
+                    <pre>
+&lt;h1&gt;Ini Judul Utama&lt;/h1&gt;
+&lt;h2&gt;Ini Judul Kedua&lt;/h2&gt;
+&lt;h3&gt;Ini Judul Ketiga&lt;/h3&gt;
+&lt;h4&gt;Ini Judul Keempat&lt;/h4&gt;
+&lt;h5&gt;Ini Judul Kelima&lt;/h5&gt;
+&lt;h6&gt;Ini Judul Keenam&lt;/h6&gt;
+                    </pre>
+                </div>
+                <div class="result">
+                    <h1>Ini Judul Utama</h1>
+                    <h2>Ini Judul Kedua</h2>
+                    <h3>Ini Judul Ketiga</h3>
+                    <h4>Ini Judul Keempat</h4>
+                    <h5>Ini Judul Kelima</h5>
+                    <h6>Ini Judul Keenam</h6>
+                </div>
+            </div>
+            <div class="example-container">
+                <div class="example">
+                    <h3>Contoh Paragraf</h3>
+                    <pre>
+&lt;p&gt;Ini adalah sebuah paragraf yang menjelaskan sesuatu.&lt;/p&gt;
+                    </pre>
+                </div>
+                <div class="result">
+                    <p>Ini adalah sebuah paragraf yang menjelaskan sesuatu.</p>
+                </div>
+            </div>
+            <div class="example-container">
+                <div class="example">
+                    <h3>Contoh Link</h3>
+                    <pre>
+&lt;a href="https://www.example.com"&gt;Kunjungi Website&lt;/a&gt;
+                    </pre>
+                </div>
+                <div class="result">
+                    <a href="https://www.example.com" target="_blank">Kunjungi Website</a>
+                </div>
+            </div>
+            <div class="example-container">
+                <div class="example">
+                    <h3>Contoh Gambar</h3>
+                    <pre>
+&lt;img src="image.png" alt="Deskripsi Gambar"&gt;
+                    </pre>
+                </div>
+                <div class="result">
+                    <img src="https://via.placeholder.com/150" alt="Deskripsi Gambar">
+                </div>
+            </div>
+            <div class="example-container">
+                <div class="example">
+                    <h3>Contoh Daftar</h3>
+                    <pre>
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Langkah 1&lt;/li&gt;
+    &lt;li&gt;Langkah 2&lt;/li&gt;
+&lt;/ol&gt;
+                    </pre>
+                </div>
+                <div class="result">
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                    <ol>
+                        <li>Langkah 1</li>
+                        <li>Langkah 2</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section id="tabel">
+            <h2>Tabel</h2>
+            <div class="example-container">
+                <div class="example">
+                    <h3>Contoh Tabel</h3>
+                    <pre>
+&lt;table border="1px"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Nama&lt;/th&gt;
+        &lt;th&gt;Usia&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Alice&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Bob&lt;/td&gt;
+        &lt;td&gt;30&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                    </pre>
+                </div>
+                <div class="result">
+                    <table border="1px">
+                        <tr>
+                            <th>Nama</th>
+                            <th>Usia</th>
+                        </tr>
+                        <tr>
+                            <td>Alice</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>Bob</td>
+                            <td>30</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section id="form">
+            <h2>Formulir</h2>
+            <div class="example-container">
+                <div class="example">
+                    <h3>Contoh Formulir</h3>
+                    <pre>
+&lt;form action="#" method="post"&gt;
+    &lt;label for="nama"&gt;Nama:&lt;/label&gt;
+    &lt;input type="text" id="nama" name="nama"&gt;&lt;br&gt;
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;
+    &lt;input type="submit" value="Kirim"&gt;
+&lt;/form&gt;
+                    </pre>
+                </div>
+                <div class="result">
+                    <form action="#" method="post">
+                        <label for="nama">Nama:</label>
+                        <input type="text" id="nama" name="nama"><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"><br>
+                        <input type="submit" value="Kirim">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="media">
+            <h2>Media</h2>
+            <div class="example-container">
+                <div class="example">
+                    <h3>Contoh Video</h3>
+                    <pre>
+&lt;video width="320" height="240" controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+                    </pre>
+                </div>
+                <div class="result">
+                    <video width="300" height="240" controls>
+                        <source src="videoexample.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="example-container">
+                <div class="example">
+                    <h3>Contoh Audio</h3>
+                    <pre>
+&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+                    </pre>
+                </div>
+                <div class="result">
+                    <audio controls>
+                        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <button id="prevBtn" disabled>Previous</button>
+        <a href="hl2.html"><button id="nextBtn">Next</button></a>
+    </footer>    
+        
+</body>
+</html>
