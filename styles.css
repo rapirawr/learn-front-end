@@ -11,7 +11,7 @@ body {
     position: absolute; /* Menggunakan posisi absolute */
     top: 100px; /* Jarak dari atas */
     text-align: center; /* Rata tengah teks */
-    color: #181818; /* Ubah warna teks jika perlu */
+    color: #fff; /* Ubah warna teks jika perlu */
 }
 
 i {
