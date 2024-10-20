@@ -1,114 +1,275 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #1eb5d3, #0d54b1);
-    color: #000;
-}
-
-.awal {
-    border: 16px solid #fff;
-    border-radius: 16px;
-    background-color: #fff;
-}
-
-header {
-    text-align: center;
-    padding: 20px;
-}
-
-main {
-    padding: 20px;
-}
-
-.example-container {
+    background-color: #333;
     display: flex;
-    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.example {
-    width: 50%;
-    margin-right: 10px;
-    border-radius: 16px;
-    border: 2px solid #fff;
-    padding: 10px;
-    background-color: #fff;
+.slct {
+    position: absolute; /* Menggunakan posisi absolute */
+    top: 100px; /* Jarak dari atas */
+    text-align: center; /* Rata tengah teks */
+    color: #181818; /* Ubah warna teks jika perlu */
 }
 
-.example pre {
-    text-align: left;
-    margin: 0;
-    padding: 10px;
-    white-space: pre-wrap;
-    background-color: #fff;
-    border-radius: 16px;
-    overflow: auto;
-    display: block;
+i {
+    font-size: 45px;
 }
 
-.result {
-    width: 50%;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 16px;
+.light-button-css {
+    position: relative;
+    margin: 20px;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 16px;
-}
-
-button {
-    padding: 10px 20px;
-    margin: 5px;
+.light-button-css button.bt {
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    outline: none;
+    background: none;
     border: none;
-    border-radius: 16px;
-    background-color: #007bff;
-    color: #fff;
-    font-size: 16px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #007bff;
+.light-button-css button.bt .button-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background-color: #0a0a0a; /* Warna latar belakang untuk tombol */
+    border-radius: 5px;
+    color: #333; /* Warna teks */
+    font-weight: 700;
+    transition: 300ms;
+    outline: #0f0f0f 2px solid;
+    outline-offset: 20;
 }
 
-button:disabled {
-    background-color: #cccccc;
-    cursor: not-allowed;
+.light-button-css button.bt .button-holder svg {
+    height: 50px;
+    fill: #0f0f0f; /* Warna isi SVG */
+    transition: 300ms;
 }
 
-#kesimpulan {
-    border-radius: 16px;
-    text-align: center;
-    background-color: #fff;
+.light-button-css button.bt .light-holder {
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-::-webkit-scrollbar {
-    width: 15px;
-}
-
-::-webkit-scrollbar-button {
-    background: #007bff;
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(#1479e5, #fff);
+.light-button-css button.bt .light-holder .dot {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #0a0a0a;
     border-radius: 10px;
+    z-index: 2;
 }
 
-.supp {
-    border-radius: 16px;
-    background-color: #fff;
-    text-align: center;
+.light-button-css button.bt .light-holder .light {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
+    background: transparent;
+}
+.light-button-css button.bt:hover .button-holder svg {
+    fill: rgba(10, 102, 194, 1); /* Warna SVG saat hover */
 }
 
-#s {
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    transition: all 1s; 
+.light-button-css button.bt:hover .button-holder {
+    color: rgba(10, 102, 194, 1); /* Warna teks saat hover */
+    outline: rgba(10, 102, 194, 1) 2px solid;
+    outline-offset: 2px;
 }
 
-#s:hover {
-    color: #a1c4e9;
-    font-size: 15px;
+.light-button-css button.bt:hover .light-holder .light {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+        180deg,
+        rgba(10, 102, 194, 1) 0%,
+        rgba(255, 255, 255, 0) 75%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+
+.light-button-html {
+    position: relative;
+    margin: 20px;
+}
+
+.light-button-html button.bt {
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.light-button-html button.bt .button-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background-color: #0a0a0a; /* Warna latar belakang untuk tombol */
+    border-radius: 5px;
+    color: #333; /* Warna teks */
+    font-weight: 700;
+    transition: 300ms;
+    outline: #0f0f0f 2px solid;
+    outline-offset: 20;
+}
+
+.light-button-html button.bt .button-holder svg {
+    height: 50px;
+    fill: #0f0f0f; /* Warna isi SVG */
+    transition: 300ms;
+}
+
+.light-button-html button.bt .light-holder {
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.light-button-html button.bt .light-holder .dot {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #0a0a0a;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.light-button-html button.bt .light-holder .light {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
+    background: transparent;
+}
+.light-button-html button.bt:hover .button-holder svg {
+    fill: #d53702; /* Warna SVG saat hover */
+}
+
+.light-button-html button.bt:hover .button-holder {
+    color: #d53702; /* Warna teks saat hover */
+    outline: #d53702 2px solid;
+    outline-offset: 2px;
+}
+
+.light-button-html button.bt:hover .light-holder .light {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+        180deg,
+        #d53702 0%,
+        rgba(255, 255, 255, 0) 75%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+
+
+.light-button-js {
+    position: relative;
+    margin: 20px;
+}
+
+.light-button-js button.bt {
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.light-button-js button.bt .button-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background-color: #0a0a0a; /* Warna latar belakang untuk tombol */
+    border-radius: 5px;
+    color: #333; /* Warna teks */
+    font-weight: 700;
+    transition: 300ms;
+    outline: #0f0f0f 2px solid;
+    outline-offset: 20;
+}
+
+.light-button-js button.bt .button-holder svg {
+    height: 50px;
+    fill: #0f0f0f; /* Warna isi SVG */
+    transition: 300ms;
+}
+
+.light-button-js button.bt .light-holder {
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.light-button-js button.bt .light-holder .dot {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #0a0a0a;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.light-button-js button.bt .light-holder .light {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
+    background: transparent;
+}
+.light-button-js button.bt:hover .button-holder svg {
+    fill: #fff700; /* Warna SVG saat hover */
+}
+
+.light-button-js button.bt:hover .button-holder {
+    color: #fff700; /* Warna teks saat hover */
+    outline: #fff700 2px solid;
+    outline-offset: 2px;
+}
+
+.light-button-js button.bt:hover .light-holder .light {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+        180deg,
+        #fff700 0%,
+        rgba(255, 255, 255, 0) 75%,
+        rgba(255, 255, 255, 0) 100%
+    );
 }
