@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Dasar-Dasar CSS</title>
+</head>
+<body>
+    <header>
+        <h1 id="a">CSS Learning <i class="fa-brands fa-css3-alt" style="color: #004cff;"></i></h1>
+    </header>
+
+    <div class="example-container">
+        <div class="example">
+            <h3>Cara memberi margin pada teks</h3>
+            <pre>
+<code>
+p {
+    margin: 20px;
+}
+</code>
+            </pre>
+        </div>
+        <div class="result">
+            <div class="box">
+                <p style="margin: 20px;">Contoh teks dengan margin 20px</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="example-container">
+        <div class="example">
+            <h3>Cara memberi padding pada teks</h3>
+            <pre>
+<code>
+p {
+    padding: 20px;
+}
+</code>
+            </pre>
+        </div>
+        <div class="result">
+            <div class="box">
+                <p style="padding: 20px;">Contoh teks dengan padding 20px</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="example-container">
+        <div class="example">
+            <h3>Cara memberi border pada teks</h3>
+            <pre>
+<code>
+p {
+    border: 2px solid black;
+}
+</code>
+            </pre>
+        </div>
+        <div class="result">
+            <div class="box">
+                <p style="border: 2px solid black;">Contoh teks dengan border 2px solid black</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="example-container">
+        <div class="example">
+            <h3>Cara membuat gradient background</h3>
+            <pre>
+<code>
+p {
+    background: linear-gradient(to right, red, yellow);
+}
+</code>
+            </pre>
+        </div>
+        <div class="result">
+            <div class="box">
+                <p style="background: linear-gradient(to right, red, yellow);">Contoh teks dengan background linear-gradient</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="example-container">
+        <div class="example">
+            <h3>Cara membuat button berwarna</h3>
+            <pre>
+<code>
+button {
+    background-color: blue;
+    color: white;
+}
+</code>
+            </pre>
+        </div>
+        <div class="result">
+            <button style="background-color: blue; color: white;">Contoh button berwarna</button>
+        </div>
+    </div>
+
+    <div class="example-container">
+        <div class="example">
+            <h3>Cara membuat efek hover</h3>
+            <pre>
+<code>
+button:hover {
+    background-color: green;
+    color: white;
+}
+</code>
+            </pre>
+        </div>
+        <div class="result">
+            <button id="c">Hover me</button>
+        </div>
+        <style>
+            #c:hover {
+    background-color: green;
+    color: white;
+            }
+        </style>
+    </div>
+
+    <footer>
+        <a href="hl1.html"><button id="prevBtn">Previous</button></a>
+        <a href="hl3.html"><button id="nextBtn">Next</button></a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

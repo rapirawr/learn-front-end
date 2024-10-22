@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Dasar-Dasar CSS</title>
+</head>
+<body>
+    <header>
+        <h1 id="a">CSS Learning <i class="fa-brands fa-css3-alt" style="color: #004cff;"></i></h1>
+    </header>
+<main>
+    <div class="example-container">
+        <div class="example">
+            <h3>Cara menambahkan font di CSS</h3>
+            <pre>
+                <code>
+    body {
+        font-family: sans-serif;
+    }
+                </code>
+            </pre>
+        </div>
+        <div class="result">
+            <div class="box">
+                <p style="font-family: sans-serif;">Ini adalah contoh teks dengan font-family: sans-serif.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="example-container">
+        <div class="example">
+            <h3>Cara menambahkan font dari Google Fonts</h3>
+            <pre>
+                <code>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+}
+                </code>
+            </pre>
+        </div>
+        <div class="result">
+            <div class="box">
+                <p style="font-family: 'Poppins', sans-serif;">Ini adalah contoh teks dengan font-family: 'Poppins', sans-serif.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="example-container">
+        <div class="example">
+            <h3>Cara menambahkan font dari Font Awesome</h3>
+            <pre>
+                <code>
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+body {
+    font-family: 'Font Awesome 5 Free', sans-serif;
+}
+                </code>
+            </pre>
+        </div>
+        <div class="result">
+            <div class="box">
+                <p style="font-family: 'Font Awesome 5 Free', sans-serif;">Ini adalah contoh teks dengan font-family: 'Font Awesome 5 Free', sans-serif.</p>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <a href="hl2.html"><button id="prevBtn">Previous</button></a>
+    <a href="hl4.html"><button id="nextBtn">Next</button></a>
+</footer>>
+<script src="script.js"></script>
+</body>
+</html>

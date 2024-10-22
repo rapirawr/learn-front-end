@@ -7,9 +7,132 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Document</title>
+    <title>Dasar-Dasar CSS</title>
 </head>
 <body>
-    <h1>Upcoming</h1>
+    <header>
+        <h1 id="a">CSS Learning <i class="fa-brands fa-css3-alt" style="color: #004cff;"></i></h1>
+    </header>
+    <main>
+        <section id="pengertian">
+            <div class="awal">
+                <h2>Pengenalan CSS</h2>
+                <strong>Apa itu CSS?</strong>
+                <p>CSS (Cascading Style Sheet) adalah bahasa lembar gaya yang digunakan untuk menentukan presentasi dan gaya dokumen yang ditulis dalam bahasa markup seperti HTML dan XML.</p>
+                <strong>Sejarah CSS</strong>
+                <p>CSS pertama kali diperkenalkan oleh Håkon Wium Lie pada tahun 1994 untuk memberikan kontrol lebih besar atas tampilan halaman web.</p>
+            </div>
+        </section>
+        <section id="struktur">
+            <div class="struktur">
+                <h2>Struktur CSS</h2>
+                <div class="example-container">
+                    <div class="example1">
+                        <strong>Struktur dasar CSS</strong>
+                        <p>Struktur dasar CSS terdiri dari tiga komponen utama: selector, properti, dan nilai.</p>
+                        <strong>Selector</strong>
+                        <p>Selector adalah elemen atau grup elemen HTML yang ingin Anda berikan gaya.</p>
+                        <strong>Properti</strong>
+                        <p>Properti adalah atribut yang ingin Anda ubah, seperti warna atau ukuran font.</p>
+                        <strong>Nilai</strong>
+                        <p>Nilai adalah nilai yang diberikan untuk properti tersebut.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="elemen">
+            <h2>Contoh Dasar CSS</h2>
+            <div class="example-container">
+                <div class="example">
+                    <h3>Cara memberi warna pada teks</h3>
+                    <pre>
+<code>
+text { 
+    color: red;
+}
+</code>
+                    </pre>
+                </div>
+                <div class="result">
+                    <div class="box">
+                        <p style="color: red;">Contoh teks dengan warna merah</p>
+                    </div>
+                </div>
+            </div>
+            <div class="example-container">
+                <div class="example">
+                    <h3>Cara memberi warna pada latar belakang</h3>
+                    <pre>
+<code>
+background {
+    background-color: red;
+}
+</code>
+                    </pre>
+                </div>
+                <div class="result">
+                    <div class="box">
+                        <p style="background-color: red; color: white;">Contoh teks dengan latar belakang merah</p>
+                    </div>
+                </div>
+            </div>
+            <div class="example-container">
+                <div class="example">
+                    <h3>Cara memberi ukuran font</h3>
+                    <pre>
+<code>
+font {
+    font-size: 20px;
+}
+</code>
+                    </pre>
+                </div>
+                <div class="result">
+                    <div class="box">
+                        <p style="font-size: 20px;">Contoh teks dengan ukuran font 20px</p>
+                    </div>
+                </div>
+            </div>
+            <div class="example-container">
+                <div class="example">
+                    <h3>Cara memberi tebal font</h3>
+                    <pre>   
+<code>
+font {
+    font-weight: bold;
+}
+</code>
+                    </pre>
+                </div>
+                <div class="result">
+                    <div class="box">
+                        <p style="font-weight: bold;">Contoh teks dengan tebal font</p>
+                    </div>
+                </div>  
+            </div>
+            <div class="example-container">
+                <div class="example">
+                    <h3>Cara memberi garis bawah pada teks</h3>
+                    <pre>
+<code>
+text {
+    text-decoration: underline;
+}
+</code>
+                    </pre>
+                </div>
+                <div class="result">
+                    <div class="box">
+                        <p style="text-decoration: underline;">Contoh teks dengan garis bawah</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <button id="prevBtn" disabled>Previous</button>
+        <a href="hl2.html"><button id="nextBtn">Next</button></a>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
