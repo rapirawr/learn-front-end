@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Dasar-Dasar Java Script</title>
+    <link rel="stylesheet" href="js.css">
 </head>
 <body>
     <header>
@@ -26,24 +27,95 @@
             <h2>Struktur Dasar JavaScript</h2>
             <div class="example-container">
                 <div class="example">
+                    <h3>Memunculkan Teks</h3>
                     <pre>
                         <code>
-function showAlert() {
-    alert("Hello, World!");
-}
+document.write('Hello, World!')
                         </code>
                     </pre>
                 </div>
                 <div class="result">
-                    <button onclick="showAlert()">Klik button ini</button>
+                    <p>Hello, World!</p>
                 </div>
-    <script>
-        function showAlert() {
-            alert("Hello, World!");
-        }
-    </script>
             </div>
         </section>
+        <div class="example-container">
+            <div class="example">
+                <h3>Memunculkan Window Alert</h3>
+                <pre>
+                    <code>
+function showAlert() {
+alert("Hello, World!");
+}
+                    </code>
+                </pre>
+            </div>
+            <div class="result">
+                <button onclick="showAlert()">Klik button ini</button>
+            </div>
+        </div>
+        <div class="example-container">
+            <div class="example">
+                <h3>Memunculkan Pesan Di Console</h3>
+                <pre>
+                    <code>
+console.log('Hello, World!')
+                    </code>
+                </pre>
+            </div>
+            <div class="result">
+                <p>No Preview</p>
+            </div>
+        </div>
+        <div class="example-container">
+            <div class="example">
+                <h3>Variabel</h3>
+                <pre>
+                    <code>
+var nama = 'John'
+let umur = '30 Tahun'
+const alamat = 'British'
+document.write(' nama saya : ' + nama + ' umur : '+ umur + ' alamat saya :' + alamat)
+                    </code>
+                </pre>
+            </div>
+            <div class="result">
+                <p>John 30 Tahun British</p>
+            </div>
+        </div>
+        <div class="example-container">
+            <div class="example">
+                <h3>Array</h3>
+                <pre>
+                    <code>
+let buah = ["apel", "jeruk", "pisang"];
+console.log(buah[0]); // Mengakses elemen pertama
+                    </code>
+                </pre>
+            </div>
+            <div class="result">
+                <p>apel</p>
+            </div>
+        </div>
+        <div class="example-container">
+            <div class="example">
+                <h3>Perkondisian</h3>
+                <pre>
+                    <code>
+let nilai = 75;
+ if (nilai >= 70) {
+console.log("Lulus");
+} else {
+console.log("Tidak Lulus");
+}        
+                    </code>
+                </pre>
+            </div>
+            <div class="result">
+                <p>Lulus</p>
+            </div>
+        </div>
+    </section>
     </main>
 
 </body>
